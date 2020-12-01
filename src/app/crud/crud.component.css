@@ -1,0 +1,19 @@
+.fas{
+    padding:10px;
+    background-color: lightblue;
+    margin:5px ;
+    cursor:pointer;
+}
+.fas:hover{
+    background-color: rgb(80, 129, 146);
+    color:#fff;
+}
+
+
+#add{
+    width: 100% !important;
+}
+
+td{
+    vertical-align: middle
+}

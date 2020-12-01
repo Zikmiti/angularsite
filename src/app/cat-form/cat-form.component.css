@@ -1,0 +1,41 @@
+#AddCat{
+    right: 19px;
+    top: 62px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+}
+
+.editCat{
+padding: 8px;
+height: 100%;
+color: rgb(59, 223, 160);
+}
+
+
+.deletCat{
+    height: 100%;
+    color: rgb(235, 86, 27);
+}
+
+.action{
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+.fas{
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.fas:hover{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.container{
+    overflow:auto
+}

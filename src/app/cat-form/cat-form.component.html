@@ -1,0 +1,14 @@
+<h1 class="text-center p-2">Categorie</h1>
+<button type="button" class="btn btn-primary m-2 fas fa-plus" (click)="AddCategorie()" id="AddCat"></button>
+<input type="text" class="form-control" placeholder="Libelle..." [(ngModel)]="libelle" id="libelle" required>
+<hr>
+<ul class="list-group  m-2" *ngFor="let cat of categories;let i=index">
+    <li value="{{cat.id}}" class="list-group-item">
+
+        <div class="text-left d-inline-block">
+            {{cat.libelle}}</div>
+        <div class="text-right d-inline-block action">
+            <i class="fas fa-minus-circle deletCat" (click)="deleteCategorie(i)"></i>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,18 @@
+.card-custom{
+    display: inline-block;
+    width: 400px;
+    border:solid 1px;
+    padding: 5px;
+    height: auto;
+    margin: 5px;
+}
+
+.card-custom > p{
+   text-align: justify;
+}
+
+.containermy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

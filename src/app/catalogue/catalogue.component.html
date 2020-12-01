@@ -1,0 +1,13 @@
+<div class="containermy">
+
+    <div class="card text-white bg-primary m-3" style="max-width: 20rem;" *ngFor="let element of articles; let i=index">
+        <div class="card-header">
+            <img src="{{element.image}}">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">{{element.nom}}</h4>
+            <p><strong>{{element.prix}}€</strong></p>
+            <p class="card-text">{{element.description}}</p>
+        </div>
+    </div>
+</div>

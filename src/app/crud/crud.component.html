@@ -1,0 +1,50 @@
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <app-form></app-form>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <button type="button" class="btn btn-info add-new" id="add" data-toggle="modal"
+                    data-target=".bd-example-modal-lg" (click)="initForm()"><i class="fa fa-plus"></i> Ajouter</button>
+            </div>
+        </div>
+        <table class="table table-bordered" style="display: table;">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Categorie</th>
+                    <th>Prix</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let element of articles; let i=index">
+                    <td>{{element.nom}}</td>
+
+                    <td class="p-0 m-0" id="catTd">
+                        <ul class="list-group">
+                            <li class="cat" *ngFor="let cat of element.categorie; let j=index">{{cat.libelle}}</li>
+                        </ul>
+                    </td>
+                    <td>{{element.prix}}€</td>
+                    <td id="imgTd"><img src="{{element.image}}" alt="image"></td>
+                    <td>{{element.description}}</td>
+
+                    <td><button type="button" class="btn btn-primary w-100 m-1 d-block" data-toggle="modal"
+                            data-target=".bd-example-modal-lg" (click)="edit(i)">Modifier</button>
+                        <button type="button" class="btn btn-primary w-100 m-1 d-block"
+                            (click)="delete(i)">Supprimer</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

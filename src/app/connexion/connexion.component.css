@@ -1,0 +1,23 @@
+#formfieldset{
+    margin: 0 auto;
+    width: max-content;
+    text-align: center !important;
+    margin-top: 60px;
+}
+
+#error{
+    background-color: lightsalmon;
+    position: absolute;
+    z-index: 200;
+    border-radius: 8px;
+    padding:10px;
+    text-align: center;
+    color:#fff;
+    top:357px;
+}
+
+
+
+app-connexion{
+    position: fixed;
+}
